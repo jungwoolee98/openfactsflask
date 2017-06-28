@@ -1,0 +1,67 @@
+body{
+	font-family: "Avenir", "Futura", sans-serif;
+}
+
+div.search{
+	
+
+}
+
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    padding: 12px 20px 12px 40px;
+    margin: 5px;
+    display: inline-block;
+    color: #333333;
+    text-align: right;
+}
+
+h1{
+	/*color: midnightblue;*/
+	text-align: center;
+	font-variant: small-caps;
+
+}
+
+h2{
+	color: midnightblue
+}
+
+div.def{
+	background-color: lavender;
+    padding: 10px;
+    border-radius: 10px;
+    border-left: 10px solid #6666ff;
+    margin: 20px; 
+}
+
+div.sum{
+	background-color: lavender;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px; 
+
+}
+
+div.ex{
+	background-color: lavender;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px; 
+
+}
+
+
+img.sample {
+    display: block;
+    margin: auto;
+}
+
+
