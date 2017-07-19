@@ -4,7 +4,7 @@ from string import Template
 from flask import Markup
 
 app=Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://@localhost/sample_db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/sample_db'
 db = SQLAlchemy(app)
 
 class Example(db.Model):
