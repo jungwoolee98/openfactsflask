@@ -18,7 +18,7 @@ input[type=text] {
     margin: 5px;
     display: inline-block;
     color: #333333;
-    text-align: right;
+    text-align: left;
 }
 
 h1{
@@ -42,18 +42,18 @@ div.def{
 
 div.sum{
 	background-color: lavender;
-    width: 100%;
     padding: 10px;
     border-radius: 10px;
+    border-left: 10px solid #6666ff;
     margin: 20px; 
 
 }
 
-div.ex{
+div.pictures{
 	background-color: lavender;
-    width: 100%;
     padding: 10px;
     border-radius: 10px;
+    border-left: 10px solid #6666ff;
     margin: 20px; 
 
 }
