@@ -6,7 +6,7 @@ import os
 import psycopg2
 import urlparse
 
-rlparse.uses_netloc.append("postgres")
+urlparse.uses_netloc.append("postgres")
 url = urlparse.urlparse(os.environ["DATABASE_URL"])
 
 conn = psycopg2.connect(
