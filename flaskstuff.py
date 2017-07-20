@@ -22,7 +22,7 @@ conn = psycopg2.connect(
 
 app=Flask(__name__)
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/sample_db'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://' + url.netloc
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://tqgafpsayuwpzs:6eb68d4cef7cf0d4fda49977c92b5ca1a5ee826e779352b5aea2237c0c49cfec@ec2-54-243-252-232.compute-1.amazonaws.com:5432/dffvjushfn5ec0"
 db = SQLAlchemy(app)
 
 class Example(db.Model):
