@@ -60,7 +60,7 @@ def factsheet(term):
 		#picture = glossary.picture,
 		#relatedterms = glossary.relatedterms,
 		relatedterms = Markup(
-			'<a href="ttp://openfax.herokuapp.com/'+glossary.relatedterms+'">'+glossary.relatedterms+'</a>'),
+			'<a href="http://openfax.herokuapp.com/'+glossary.relatedterms+'">'+glossary.relatedterms+'</a>'),
 		#resources = glossary.resources)
 		resources = Markup(
 			'<iframe width="560" height="315" src='+glossary.resources+' frameborder="0" allowfullscreen></iframe>')
