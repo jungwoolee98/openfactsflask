@@ -6,23 +6,23 @@ import os
 import psycopg2
 import urlparse
 
-#urlparse.uses_netloc.append("postgres")
+urlparse.uses_netloc.append("postgres")
 url = urlparse.urlparse(os.environ["DATABASE_URL"])
-url = 'postgres://' + url.netloc
+#url = 'postgres://' + url.netloc
 
 print 'hello', url
 
-"""conn = psycopg2.connect(
+conn = psycopg2.connect(
     database=url.path[1:],
     user=url.username,
     password=url.password,
     host=url.hostname,
     port=url.port
-)"""
+)
 
 app=Flask(__name__)
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/sample_db'
-app.config['SQLALCHEMY_DATABASE_URI'] = url
+app.config['SQLALCHEMY_DATABASE_URI'] = url.netloc
 db = SQLAlchemy(app)
 
 class Example(db.Model):
