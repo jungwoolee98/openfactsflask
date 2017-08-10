@@ -71,7 +71,7 @@ def factsheet(term):
 			'<a href="http://openfax.herokuapp.com/'+glossary.relatedterm2+'">'+glossary.relatedterm2+'</a>'),
 		#resources = glossary.resources)
 		resources = Markup(
-			'<iframe width="90%" height="35%" src='+glossary.resources+' frameborder="0" allowfullscreen></iframe>')
+			'<object width="90%" data='+glossary.resources+' </object>')
 	)
 	else:
 		glossary = Example.query.filter_by(word = term.lower()).first_or_404()
