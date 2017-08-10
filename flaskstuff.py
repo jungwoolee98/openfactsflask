@@ -83,10 +83,14 @@ def factsheet(term):
 		picture = Markup(
 			'<img src='+glossary.picture+'>'),
 		#relatedterms = glossary.relatedterms,
-		relatedterms = Markup(
-			'<a href="http://openfax.herokuapp.com/'+glossary.relatedterms+'">'+glossary.relatedterms+'</a>'),
+		relatedterm0 = Markup(
+			'<a href="http://openfax.herokuapp.com/'+glossary.relatedterm0+'">'+glossary.relatedterm0+'</a>'),
+		relatedterm1 = Markup(
+			'<a href="http://openfax.herokuapp.com/'+glossary.relatedterm1+'">'+glossary.relatedterm1+'</a>'),
+		relatedterm2 = Markup(
+			'<a href="http://openfax.herokuapp.com/'+glossary.relatedterm2+'">'+glossary.relatedterm2+'</a>'),
 		resources = Markup(
-			'<iframe width="560" height="315" src='+glossary.resources+' frameborder="0" allowfullscreen></iframe>')
+			'<iframe width="475" height="315" src='+glossary.resources+' frameborder="0" allowfullscreen></iframe>')
 	)
 	return render_template("sample-page.htm")
 
